@@ -1,0 +1,18 @@
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\bin\Debug\Mesin Antrian Display.exe.config
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\bin\Debug\Mesin Antrian Display.exe
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\bin\Debug\Mesin Antrian Display.pdb
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\bin\Debug\Mesin Antrian Display.xml
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Mesin Antrian Display.vbproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Mesin_Antrian_Display.Resources.resources
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Mesin Antrian Display.vbproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Mesin Antrian Display.vbproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Mesin Antrian Display.exe
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Mesin Antrian Display.xml
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Mesin Antrian Display.pdb
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\bin\Debug\Interop.WMPLib.dll
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Interop.WMPLib.dll
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Mesin Antrian Display.vbproj.ResolveComReference.cache
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Mesin_Antrian_Display.Form1.resources
+C:\Users\LENOVO\source\repos\Mesin Antrian Display\obj\Debug\Mesin_Antrian_Display.Form2.resources
