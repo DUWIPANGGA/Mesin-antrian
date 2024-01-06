@@ -116,6 +116,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="panggil.vb" />
     <Compile Include="resizer.vb" />
     <Compile Include="config.vb" />
     <Compile Include="Component1.Designer.vb">
@@ -200,6 +201,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\.editorconfig" />
     <None Include="Resources\BACKGROUND.png" />
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +230,35 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delapan.wav" />
+    <None Include="Resources\tunggu.wav" />
+    <None Include="Resources\tujuh.wav" />
+    <None Include="Resources\tiga.wav" />
+    <None Include="Resources\sepuluh.wav" />
+    <None Include="Resources\sembilan.wav" />
+    <None Include="Resources\sebelas.wav" />
+    <None Include="Resources\se.wav" />
+    <None Include="Resources\satu.wav" />
+    <None Include="Resources\ribu.wav" />
+    <None Include="Resources\ratus.wav" />
+    <None Include="Resources\puluh.wav" />
+    <None Include="Resources\nomor_antrian.wav" />
+    <None Include="Resources\nomor antrian .wav" />
+    <None Include="Resources\lima.wav" />
+    <None Include="Resources\G.wav" />
+    <None Include="Resources\F.wav" />
+    <None Include="Resources\enam.wav" />
+    <None Include="Resources\empat.wav" />
+    <None Include="Resources\E.wav" />
+    <None Include="Resources\dua.wav" />
+    <None Include="Resources\D.wav" />
+    <None Include="Resources\C.wav" />
+    <None Include="Resources\belas.wav" />
+    <None Include="Resources\B.wav" />
+    <None Include="Resources\A.wav" />
+    <Content Include="Resources\buzz.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mesin Antrian Display.exe" size="9680384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mesin Antrian Display.exe" size="14279680">
       <assemblyIdentity name="Mesin Antrian Display" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>++Et2YPGXmh22fF7J+mjUljIrCQcDqRzvsPVC5rHnS0=</dsig:DigestValue>
+        <dsig:DigestValue>ZV5ZaN2XXzWBCNcuSOp/E6AHRUEb3rR+pisFFDy1ZkQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -84,6 +84,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>KK22eqIcmhgANdEql50c4Q2FO3lxhd2jbhnGHFL60ts=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\buzz.mp3" size="2127886">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OytBRQu24Q8aaoIdHyB9oLCZ1D8QJy1BI/SOnWkkwLA=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

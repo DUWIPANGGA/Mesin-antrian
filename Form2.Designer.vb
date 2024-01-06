@@ -30,48 +30,53 @@ Partial Class Form2
         Me.main_tipe_loket_text = New System.Windows.Forms.Label()
         Me.main_number_loket = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.main_loket = New System.Windows.Forms.Label()
         Me.scrolingbox = New System.Windows.Forms.GroupBox()
         Me.scroling_text = New System.Windows.Forms.Label()
         Me.GroupBox10 = New System.Windows.Forms.GroupBox()
         Me.loket_G = New System.Windows.Forms.GroupBox()
         Me.g = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.Label32 = New System.Windows.Forms.Label()
+        Me.lg = New System.Windows.Forms.Label()
+        Me.log = New System.Windows.Forms.Label()
         Me.loket_F = New System.Windows.Forms.GroupBox()
         Me.f = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
+        Me.lf = New System.Windows.Forms.Label()
+        Me.lof = New System.Windows.Forms.Label()
         Me.loket_E = New System.Windows.Forms.GroupBox()
         Me.e = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
+        Me.le = New System.Windows.Forms.Label()
+        Me.loe = New System.Windows.Forms.Label()
         Me.Loket_D = New System.Windows.Forms.GroupBox()
         Me.d = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
+        Me.ld = New System.Windows.Forms.Label()
+        Me.lod = New System.Windows.Forms.Label()
         Me.loket_C = New System.Windows.Forms.GroupBox()
         Me.c = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.lc = New System.Windows.Forms.Label()
+        Me.loc = New System.Windows.Forms.Label()
         Me.loket_B = New System.Windows.Forms.GroupBox()
         Me.b = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lb = New System.Windows.Forms.Label()
+        Me.lob = New System.Windows.Forms.Label()
         Me.loket_A = New System.Windows.Forms.GroupBox()
         Me.a = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.la = New System.Windows.Forms.Label()
+        Me.loa = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.company = New System.Windows.Forms.GroupBox()
+        Me.instansi = New System.Windows.Forms.Label()
+        Me.logo = New System.Windows.Forms.PictureBox()
+        Me.alamat = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.scrolingbox.SuspendLayout()
@@ -83,16 +88,18 @@ Partial Class Form2
         Me.loket_C.SuspendLayout()
         Me.loket_B.SuspendLayout()
         Me.loket_A.SuspendLayout()
+        Me.company.SuspendLayout()
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'AxWindowsMediaPlayer1
         '
         Me.AxWindowsMediaPlayer1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.AxWindowsMediaPlayer1.Enabled = True
-        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(338, 12)
+        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(339, 63)
         Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
         Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(441, 253)
+        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(441, 230)
         Me.AxWindowsMediaPlayer1.TabIndex = 0
         '
         'GroupBox1
@@ -103,19 +110,18 @@ Partial Class Form2
         Me.GroupBox1.Controls.Add(Me.main_tipe_loket_text)
         Me.GroupBox1.Controls.Add(Me.main_number_loket)
         Me.GroupBox1.Controls.Add(Me.GroupBox3)
-        Me.GroupBox1.Controls.Add(Me.main_loket)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 58)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(320, 253)
+        Me.GroupBox1.Size = New System.Drawing.Size(320, 235)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         '
         'main_tipe_loket
         '
         Me.main_tipe_loket.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.main_tipe_loket.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.main_tipe_loket.Font = New System.Drawing.Font("Verdana", 50.25!, System.Drawing.FontStyle.Bold)
         Me.main_tipe_loket.ForeColor = System.Drawing.Color.DarkOrange
-        Me.main_tipe_loket.Location = New System.Drawing.Point(235, 31)
+        Me.main_tipe_loket.Location = New System.Drawing.Point(245, 11)
         Me.main_tipe_loket.Name = "main_tipe_loket"
         Me.main_tipe_loket.Size = New System.Drawing.Size(79, 76)
         Me.main_tipe_loket.TabIndex = 7
@@ -124,22 +130,22 @@ Partial Class Form2
         'main_tipe_loket_text
         '
         Me.main_tipe_loket_text.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.main_tipe_loket_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.main_tipe_loket_text.Font = New System.Drawing.Font("Verdana", 50.25!, System.Drawing.FontStyle.Bold)
         Me.main_tipe_loket_text.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.main_tipe_loket_text.Location = New System.Drawing.Point(-5, 31)
+        Me.main_tipe_loket_text.Location = New System.Drawing.Point(-11, 11)
         Me.main_tipe_loket_text.Name = "main_tipe_loket_text"
-        Me.main_tipe_loket_text.Size = New System.Drawing.Size(258, 76)
+        Me.main_tipe_loket_text.Size = New System.Drawing.Size(287, 76)
         Me.main_tipe_loket_text.TabIndex = 6
         Me.main_tipe_loket_text.Text = "LOKET"
         '
         'main_number_loket
         '
         Me.main_number_loket.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.main_number_loket.Font = New System.Drawing.Font("Microsoft Sans Serif", 60.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.main_number_loket.Font = New System.Drawing.Font("Verdana", 60.0!, System.Drawing.FontStyle.Bold)
         Me.main_number_loket.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.main_number_loket.Location = New System.Drawing.Point(113, 144)
+        Me.main_number_loket.Location = New System.Drawing.Point(47, 129)
         Me.main_number_loket.Name = "main_number_loket"
-        Me.main_number_loket.Size = New System.Drawing.Size(174, 91)
+        Me.main_number_loket.Size = New System.Drawing.Size(256, 122)
         Me.main_number_loket.TabIndex = 4
         Me.main_number_loket.Text = "000"
         '
@@ -147,31 +153,20 @@ Partial Class Form2
         '
         Me.GroupBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox3.Location = New System.Drawing.Point(239, 259)
+        Me.GroupBox3.Location = New System.Drawing.Point(239, 241)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(225, 133)
         Me.GroupBox3.TabIndex = 3
         Me.GroupBox3.TabStop = False
         '
-        'main_loket
-        '
-        Me.main_loket.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.main_loket.Font = New System.Drawing.Font("Microsoft Sans Serif", 60.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.main_loket.ForeColor = System.Drawing.Color.DarkOrange
-        Me.main_loket.Location = New System.Drawing.Point(45, 144)
-        Me.main_loket.Name = "main_loket"
-        Me.main_loket.Size = New System.Drawing.Size(93, 91)
-        Me.main_loket.TabIndex = 8
-        Me.main_loket.Text = "A"
-        '
         'scrolingbox
         '
         Me.scrolingbox.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.scrolingbox.BackgroundImage = Global.Mesin_Antrian_Display.My.Resources.Resources.background_scroling
+        Me.scrolingbox.BackColor = System.Drawing.Color.DarkBlue
         Me.scrolingbox.Controls.Add(Me.scroling_text)
-        Me.scrolingbox.Location = New System.Drawing.Point(-7, 418)
+        Me.scrolingbox.Location = New System.Drawing.Point(-7, 425)
         Me.scrolingbox.Name = "scrolingbox"
-        Me.scrolingbox.Size = New System.Drawing.Size(802, 50)
+        Me.scrolingbox.Size = New System.Drawing.Size(826, 43)
         Me.scrolingbox.TabIndex = 3
         Me.scrolingbox.TabStop = False
         '
@@ -182,9 +177,8 @@ Partial Class Form2
         Me.scroling_text.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.scroling_text.Location = New System.Drawing.Point(-1, 16)
         Me.scroling_text.Name = "scroling_text"
-        Me.scroling_text.Size = New System.Drawing.Size(153, 16)
+        Me.scroling_text.Size = New System.Drawing.Size(1237, 16)
         Me.scroling_text.TabIndex = 0
-        Me.scroling_text.Text = "scroling_text halo panda"
         '
         'GroupBox10
         '
@@ -198,7 +192,7 @@ Partial Class Form2
         Me.GroupBox10.Controls.Add(Me.loket_B)
         Me.GroupBox10.Controls.Add(Me.loket_A)
         Me.GroupBox10.ForeColor = System.Drawing.Color.Crimson
-        Me.GroupBox10.Location = New System.Drawing.Point(12, 274)
+        Me.GroupBox10.Location = New System.Drawing.Point(12, 293)
         Me.GroupBox10.Name = "GroupBox10"
         Me.GroupBox10.Size = New System.Drawing.Size(767, 130)
         Me.GroupBox10.TabIndex = 4
@@ -207,12 +201,11 @@ Partial Class Form2
         'loket_G
         '
         Me.loket_G.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.loket_G.BackColor = System.Drawing.Color.MidnightBlue
-        Me.loket_G.BackgroundImage = Global.Mesin_Antrian_Display.My.Resources.Resources._5559852
+        Me.loket_G.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.loket_G.Controls.Add(Me.g)
         Me.loket_G.Controls.Add(Me.Label30)
-        Me.loket_G.Controls.Add(Me.Label31)
-        Me.loket_G.Controls.Add(Me.Label32)
+        Me.loket_G.Controls.Add(Me.lg)
+        Me.loket_G.Controls.Add(Me.log)
         Me.loket_G.Location = New System.Drawing.Point(651, 19)
         Me.loket_G.Name = "loket_G"
         Me.loket_G.Size = New System.Drawing.Size(100, 100)
@@ -223,11 +216,11 @@ Partial Class Form2
         '
         Me.g.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.g.BackColor = System.Drawing.Color.Transparent
-        Me.g.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.g.Font = New System.Drawing.Font("Verdana", 28.25!, System.Drawing.FontStyle.Bold)
         Me.g.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.g.Location = New System.Drawing.Point(48, 61)
+        Me.g.Location = New System.Drawing.Point(-3, 46)
         Me.g.Name = "g"
-        Me.g.Size = New System.Drawing.Size(39, 20)
+        Me.g.Size = New System.Drawing.Size(107, 46)
         Me.g.TabIndex = 9
         Me.g.Text = "000"
         '
@@ -241,41 +234,39 @@ Partial Class Form2
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(23, 20)
         Me.Label30.TabIndex = 9
-        Me.Label30.Text = "G"
         '
-        'Label31
+        'lg
         '
-        Me.Label31.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label31.BackColor = System.Drawing.Color.Transparent
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label31.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label31.Location = New System.Drawing.Point(76, 28)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(20, 17)
-        Me.Label31.TabIndex = 10
-        Me.Label31.Text = "G"
+        Me.lg.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lg.BackColor = System.Drawing.Color.Transparent
+        Me.lg.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lg.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lg.Location = New System.Drawing.Point(73, 15)
+        Me.lg.Name = "lg"
+        Me.lg.Size = New System.Drawing.Size(24, 26)
+        Me.lg.TabIndex = 10
+        Me.lg.Text = "G"
         '
-        'Label32
+        'log
         '
-        Me.Label32.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label32.BackColor = System.Drawing.Color.Transparent
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label32.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label32.Location = New System.Drawing.Point(20, 28)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(59, 17)
-        Me.Label32.TabIndex = 9
-        Me.Label32.Text = "LOKET"
+        Me.log.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.log.BackColor = System.Drawing.Color.Transparent
+        Me.log.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.log.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.log.Location = New System.Drawing.Point(-3, 15)
+        Me.log.Name = "log"
+        Me.log.Size = New System.Drawing.Size(97, 30)
+        Me.log.TabIndex = 9
+        Me.log.Text = "LOKET"
         '
         'loket_F
         '
         Me.loket_F.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.loket_F.BackColor = System.Drawing.Color.MidnightBlue
-        Me.loket_F.BackgroundImage = Global.Mesin_Antrian_Display.My.Resources.Resources._5559852
+        Me.loket_F.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.loket_F.Controls.Add(Me.f)
         Me.loket_F.Controls.Add(Me.Label26)
-        Me.loket_F.Controls.Add(Me.Label27)
-        Me.loket_F.Controls.Add(Me.Label28)
+        Me.loket_F.Controls.Add(Me.lf)
+        Me.loket_F.Controls.Add(Me.lof)
         Me.loket_F.Location = New System.Drawing.Point(545, 19)
         Me.loket_F.Name = "loket_F"
         Me.loket_F.Size = New System.Drawing.Size(100, 100)
@@ -286,11 +277,11 @@ Partial Class Form2
         '
         Me.f.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.f.BackColor = System.Drawing.Color.Transparent
-        Me.f.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.f.Font = New System.Drawing.Font("Verdana", 28.25!, System.Drawing.FontStyle.Bold)
         Me.f.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.f.Location = New System.Drawing.Point(48, 61)
+        Me.f.Location = New System.Drawing.Point(0, 46)
         Me.f.Name = "f"
-        Me.f.Size = New System.Drawing.Size(39, 20)
+        Me.f.Size = New System.Drawing.Size(107, 46)
         Me.f.TabIndex = 9
         Me.f.Text = "000"
         '
@@ -304,41 +295,39 @@ Partial Class Form2
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(20, 20)
         Me.Label26.TabIndex = 9
-        Me.Label26.Text = "F"
         '
-        'Label27
+        'lf
         '
-        Me.Label27.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label27.BackColor = System.Drawing.Color.Transparent
-        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label27.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label27.Location = New System.Drawing.Point(76, 28)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(17, 17)
-        Me.Label27.TabIndex = 10
-        Me.Label27.Text = "F"
+        Me.lf.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lf.BackColor = System.Drawing.Color.Transparent
+        Me.lf.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lf.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lf.Location = New System.Drawing.Point(76, 15)
+        Me.lf.Name = "lf"
+        Me.lf.Size = New System.Drawing.Size(21, 26)
+        Me.lf.TabIndex = 10
+        Me.lf.Text = "F"
         '
-        'Label28
+        'lof
         '
-        Me.Label28.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label28.BackColor = System.Drawing.Color.Transparent
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label28.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label28.Location = New System.Drawing.Point(20, 28)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(59, 17)
-        Me.Label28.TabIndex = 9
-        Me.Label28.Text = "LOKET"
+        Me.lof.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lof.BackColor = System.Drawing.Color.Transparent
+        Me.lof.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lof.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lof.Location = New System.Drawing.Point(-3, 15)
+        Me.lof.Name = "lof"
+        Me.lof.Size = New System.Drawing.Size(97, 30)
+        Me.lof.TabIndex = 9
+        Me.lof.Text = "LOKET"
         '
         'loket_E
         '
-        Me.loket_E.BackColor = System.Drawing.Color.MidnightBlue
-        Me.loket_E.BackgroundImage = Global.Mesin_Antrian_Display.My.Resources.Resources._5559852
+        Me.loket_E.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.loket_E.Controls.Add(Me.e)
         Me.loket_E.Controls.Add(Me.Label22)
-        Me.loket_E.Controls.Add(Me.Label23)
-        Me.loket_E.Controls.Add(Me.Label24)
-        Me.loket_E.Location = New System.Drawing.Point(432, 19)
+        Me.loket_E.Controls.Add(Me.le)
+        Me.loket_E.Controls.Add(Me.loe)
+        Me.loket_E.Location = New System.Drawing.Point(439, 19)
         Me.loket_E.Name = "loket_E"
         Me.loket_E.Size = New System.Drawing.Size(100, 100)
         Me.loket_E.TabIndex = 12
@@ -347,11 +336,11 @@ Partial Class Form2
         'e
         '
         Me.e.BackColor = System.Drawing.Color.Transparent
-        Me.e.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.e.Font = New System.Drawing.Font("Verdana", 28.25!, System.Drawing.FontStyle.Bold)
         Me.e.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.e.Location = New System.Drawing.Point(48, 61)
+        Me.e.Location = New System.Drawing.Point(0, 46)
         Me.e.Name = "e"
-        Me.e.Size = New System.Drawing.Size(39, 20)
+        Me.e.Size = New System.Drawing.Size(107, 46)
         Me.e.TabIndex = 9
         Me.e.Text = "000"
         '
@@ -365,41 +354,39 @@ Partial Class Form2
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(21, 20)
         Me.Label22.TabIndex = 9
-        Me.Label22.Text = "E"
         '
-        'Label23
+        'le
         '
-        Me.Label23.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label23.BackColor = System.Drawing.Color.Transparent
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label23.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label23.Location = New System.Drawing.Point(76, 28)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(18, 17)
-        Me.Label23.TabIndex = 10
-        Me.Label23.Text = "E"
+        Me.le.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.le.BackColor = System.Drawing.Color.Transparent
+        Me.le.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.le.ForeColor = System.Drawing.Color.DarkOrange
+        Me.le.Location = New System.Drawing.Point(75, 16)
+        Me.le.Name = "le"
+        Me.le.Size = New System.Drawing.Size(22, 26)
+        Me.le.TabIndex = 10
+        Me.le.Text = "E"
         '
-        'Label24
+        'loe
         '
-        Me.Label24.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label24.BackColor = System.Drawing.Color.Transparent
-        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label24.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label24.Location = New System.Drawing.Point(20, 28)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(59, 17)
-        Me.Label24.TabIndex = 9
-        Me.Label24.Text = "LOKET"
+        Me.loe.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.loe.BackColor = System.Drawing.Color.Transparent
+        Me.loe.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.loe.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.loe.Location = New System.Drawing.Point(-3, 15)
+        Me.loe.Name = "loe"
+        Me.loe.Size = New System.Drawing.Size(97, 30)
+        Me.loe.TabIndex = 9
+        Me.loe.Text = "LOKET"
         '
         'Loket_D
         '
         Me.Loket_D.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Loket_D.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Loket_D.BackgroundImage = Global.Mesin_Antrian_Display.My.Resources.Resources._5559852
+        Me.Loket_D.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Loket_D.Controls.Add(Me.d)
         Me.Loket_D.Controls.Add(Me.Label18)
-        Me.Loket_D.Controls.Add(Me.Label19)
-        Me.Loket_D.Controls.Add(Me.Label20)
+        Me.Loket_D.Controls.Add(Me.ld)
+        Me.Loket_D.Controls.Add(Me.lod)
         Me.Loket_D.Location = New System.Drawing.Point(333, 19)
         Me.Loket_D.Name = "Loket_D"
         Me.Loket_D.Size = New System.Drawing.Size(100, 100)
@@ -410,11 +397,11 @@ Partial Class Form2
         '
         Me.d.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.d.BackColor = System.Drawing.Color.Transparent
-        Me.d.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.d.Font = New System.Drawing.Font("Verdana", 28.25!, System.Drawing.FontStyle.Bold)
         Me.d.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.d.Location = New System.Drawing.Point(48, 61)
+        Me.d.Location = New System.Drawing.Point(0, 46)
         Me.d.Name = "d"
-        Me.d.Size = New System.Drawing.Size(39, 20)
+        Me.d.Size = New System.Drawing.Size(107, 46)
         Me.d.TabIndex = 9
         Me.d.Text = "000"
         '
@@ -428,41 +415,39 @@ Partial Class Form2
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(22, 20)
         Me.Label18.TabIndex = 9
-        Me.Label18.Text = "D"
         '
-        'Label19
+        'ld
         '
-        Me.Label19.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label19.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label19.Location = New System.Drawing.Point(76, 28)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(19, 17)
-        Me.Label19.TabIndex = 10
-        Me.Label19.Text = "D"
+        Me.ld.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ld.BackColor = System.Drawing.Color.Transparent
+        Me.ld.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ld.ForeColor = System.Drawing.Color.DarkOrange
+        Me.ld.Location = New System.Drawing.Point(77, 16)
+        Me.ld.Name = "ld"
+        Me.ld.Size = New System.Drawing.Size(23, 26)
+        Me.ld.TabIndex = 10
+        Me.ld.Text = "D"
         '
-        'Label20
+        'lod
         '
-        Me.Label20.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label20.BackColor = System.Drawing.Color.Transparent
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label20.Location = New System.Drawing.Point(20, 28)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(59, 17)
-        Me.Label20.TabIndex = 9
-        Me.Label20.Text = "LOKET"
+        Me.lod.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lod.BackColor = System.Drawing.Color.Transparent
+        Me.lod.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lod.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lod.Location = New System.Drawing.Point(-3, 15)
+        Me.lod.Name = "lod"
+        Me.lod.Size = New System.Drawing.Size(97, 30)
+        Me.lod.TabIndex = 9
+        Me.lod.Text = "LOKET"
         '
         'loket_C
         '
         Me.loket_C.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.loket_C.BackColor = System.Drawing.Color.MidnightBlue
-        Me.loket_C.BackgroundImage = Global.Mesin_Antrian_Display.My.Resources.Resources._5559852
+        Me.loket_C.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.loket_C.Controls.Add(Me.c)
         Me.loket_C.Controls.Add(Me.Label14)
-        Me.loket_C.Controls.Add(Me.Label15)
-        Me.loket_C.Controls.Add(Me.Label16)
+        Me.loket_C.Controls.Add(Me.lc)
+        Me.loket_C.Controls.Add(Me.loc)
         Me.loket_C.Location = New System.Drawing.Point(227, 19)
         Me.loket_C.Name = "loket_C"
         Me.loket_C.Size = New System.Drawing.Size(100, 100)
@@ -473,11 +458,11 @@ Partial Class Form2
         '
         Me.c.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.c.BackColor = System.Drawing.Color.Transparent
-        Me.c.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.c.Font = New System.Drawing.Font("Verdana", 28.25!, System.Drawing.FontStyle.Bold)
         Me.c.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.c.Location = New System.Drawing.Point(48, 61)
+        Me.c.Location = New System.Drawing.Point(0, 46)
         Me.c.Name = "c"
-        Me.c.Size = New System.Drawing.Size(39, 20)
+        Me.c.Size = New System.Drawing.Size(107, 46)
         Me.c.TabIndex = 9
         Me.c.Text = "000"
         '
@@ -491,41 +476,39 @@ Partial Class Form2
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(21, 20)
         Me.Label14.TabIndex = 9
-        Me.Label14.Text = "C"
         '
-        'Label15
+        'lc
         '
-        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label15.BackColor = System.Drawing.Color.Transparent
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label15.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label15.Location = New System.Drawing.Point(76, 28)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(18, 17)
-        Me.Label15.TabIndex = 10
-        Me.Label15.Text = "C"
+        Me.lc.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lc.BackColor = System.Drawing.Color.Transparent
+        Me.lc.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lc.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lc.Location = New System.Drawing.Point(74, 15)
+        Me.lc.Name = "lc"
+        Me.lc.Size = New System.Drawing.Size(22, 26)
+        Me.lc.TabIndex = 10
+        Me.lc.Text = "C"
         '
-        'Label16
+        'loc
         '
-        Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label16.BackColor = System.Drawing.Color.Transparent
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label16.Location = New System.Drawing.Point(20, 28)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(59, 17)
-        Me.Label16.TabIndex = 9
-        Me.Label16.Text = "LOKET"
+        Me.loc.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.loc.BackColor = System.Drawing.Color.Transparent
+        Me.loc.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.loc.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.loc.Location = New System.Drawing.Point(-3, 15)
+        Me.loc.Name = "loc"
+        Me.loc.Size = New System.Drawing.Size(97, 30)
+        Me.loc.TabIndex = 9
+        Me.loc.Text = "LOKET"
         '
         'loket_B
         '
         Me.loket_B.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.loket_B.BackColor = System.Drawing.Color.MidnightBlue
-        Me.loket_B.BackgroundImage = Global.Mesin_Antrian_Display.My.Resources.Resources._5559852
+        Me.loket_B.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.loket_B.Controls.Add(Me.b)
         Me.loket_B.Controls.Add(Me.Label10)
-        Me.loket_B.Controls.Add(Me.Label11)
-        Me.loket_B.Controls.Add(Me.Label12)
+        Me.loket_B.Controls.Add(Me.lb)
+        Me.loket_B.Controls.Add(Me.lob)
         Me.loket_B.Location = New System.Drawing.Point(121, 19)
         Me.loket_B.Name = "loket_B"
         Me.loket_B.Size = New System.Drawing.Size(100, 100)
@@ -536,11 +519,11 @@ Partial Class Form2
         '
         Me.b.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.b.BackColor = System.Drawing.Color.Transparent
-        Me.b.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.b.Font = New System.Drawing.Font("Verdana", 28.25!, System.Drawing.FontStyle.Bold)
         Me.b.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.b.Location = New System.Drawing.Point(48, 61)
+        Me.b.Location = New System.Drawing.Point(0, 46)
         Me.b.Name = "b"
-        Me.b.Size = New System.Drawing.Size(39, 20)
+        Me.b.Size = New System.Drawing.Size(107, 46)
         Me.b.TabIndex = 9
         Me.b.Text = "000"
         '
@@ -554,41 +537,39 @@ Partial Class Form2
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(21, 20)
         Me.Label10.TabIndex = 9
-        Me.Label10.Text = "B"
         '
-        'Label11
+        'lb
         '
-        Me.Label11.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label11.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label11.Location = New System.Drawing.Point(76, 28)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(18, 17)
-        Me.Label11.TabIndex = 10
-        Me.Label11.Text = "B"
+        Me.lb.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lb.BackColor = System.Drawing.Color.Transparent
+        Me.lb.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lb.Location = New System.Drawing.Point(75, 15)
+        Me.lb.Name = "lb"
+        Me.lb.Size = New System.Drawing.Size(22, 26)
+        Me.lb.TabIndex = 10
+        Me.lb.Text = "B"
         '
-        'Label12
+        'lob
         '
-        Me.Label12.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label12.Location = New System.Drawing.Point(20, 28)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(59, 17)
-        Me.Label12.TabIndex = 9
-        Me.Label12.Text = "LOKET"
+        Me.lob.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lob.BackColor = System.Drawing.Color.Transparent
+        Me.lob.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lob.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lob.Location = New System.Drawing.Point(-3, 15)
+        Me.lob.Name = "lob"
+        Me.lob.Size = New System.Drawing.Size(97, 30)
+        Me.lob.TabIndex = 9
+        Me.lob.Text = "LOKET"
         '
         'loket_A
         '
         Me.loket_A.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.loket_A.BackColor = System.Drawing.Color.MidnightBlue
-        Me.loket_A.BackgroundImage = Global.Mesin_Antrian_Display.My.Resources.Resources._5559852
+        Me.loket_A.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.loket_A.Controls.Add(Me.a)
         Me.loket_A.Controls.Add(Me.Label8)
-        Me.loket_A.Controls.Add(Me.Label6)
-        Me.loket_A.Controls.Add(Me.Label5)
+        Me.loket_A.Controls.Add(Me.la)
+        Me.loket_A.Controls.Add(Me.loa)
         Me.loket_A.Location = New System.Drawing.Point(15, 19)
         Me.loket_A.Name = "loket_A"
         Me.loket_A.Size = New System.Drawing.Size(100, 100)
@@ -599,11 +580,11 @@ Partial Class Form2
         '
         Me.a.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.a.BackColor = System.Drawing.Color.Transparent
-        Me.a.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.a.Font = New System.Drawing.Font("Verdana", 28.25!, System.Drawing.FontStyle.Bold)
         Me.a.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.a.Location = New System.Drawing.Point(49, 61)
+        Me.a.Location = New System.Drawing.Point(1, 46)
         Me.a.Name = "a"
-        Me.a.Size = New System.Drawing.Size(39, 20)
+        Me.a.Size = New System.Drawing.Size(107, 46)
         Me.a.TabIndex = 9
         Me.a.Text = "000"
         '
@@ -617,31 +598,30 @@ Partial Class Form2
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(21, 20)
         Me.Label8.TabIndex = 9
-        Me.Label8.Text = "A"
         '
-        'Label6
+        'la
         '
-        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label6.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label6.Location = New System.Drawing.Point(76, 28)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(18, 17)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "A"
+        Me.la.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.la.BackColor = System.Drawing.Color.Transparent
+        Me.la.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.la.ForeColor = System.Drawing.Color.DarkOrange
+        Me.la.Location = New System.Drawing.Point(75, 15)
+        Me.la.Name = "la"
+        Me.la.Size = New System.Drawing.Size(22, 26)
+        Me.la.TabIndex = 10
+        Me.la.Text = "A"
         '
-        'Label5
+        'loa
         '
-        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(20, 28)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(59, 17)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "LOKET"
+        Me.loa.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.loa.BackColor = System.Drawing.Color.Transparent
+        Me.loa.Font = New System.Drawing.Font("Verdana", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.loa.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.loa.Location = New System.Drawing.Point(-3, 15)
+        Me.loa.Name = "loa"
+        Me.loa.Size = New System.Drawing.Size(97, 30)
+        Me.loa.TabIndex = 9
+        Me.loa.Text = "LOKET"
         '
         'OpenFileDialog1
         '
@@ -650,16 +630,84 @@ Partial Class Form2
         'Timer1
         '
         '
+        'Timer2
+        '
+        Me.Timer2.Enabled = True
+        Me.Timer2.Interval = 1
+        '
+        'company
+        '
+        Me.company.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.company.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.company.Controls.Add(Me.Label1)
+        Me.company.Controls.Add(Me.alamat)
+        Me.company.Controls.Add(Me.logo)
+        Me.company.Controls.Add(Me.instansi)
+        Me.company.Location = New System.Drawing.Point(-5, -3)
+        Me.company.Name = "company"
+        Me.company.Size = New System.Drawing.Size(826, 66)
+        Me.company.TabIndex = 4
+        Me.company.TabStop = False
+        '
+        'instansi
+        '
+        Me.instansi.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.instansi.BackColor = System.Drawing.Color.Transparent
+        Me.instansi.Font = New System.Drawing.Font("Verdana", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.instansi.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.instansi.Location = New System.Drawing.Point(93, 15)
+        Me.instansi.Name = "instansi"
+        Me.instansi.Size = New System.Drawing.Size(671, 17)
+        Me.instansi.TabIndex = 11
+        Me.instansi.Text = "CV. MANDATERA TECHNOLOGY"
+        '
+        'logo
+        '
+        Me.logo.Image = CType(resources.GetObject("logo.Image"), System.Drawing.Image)
+        Me.logo.InitialImage = CType(resources.GetObject("logo.InitialImage"), System.Drawing.Image)
+        Me.logo.Location = New System.Drawing.Point(20, 9)
+        Me.logo.Name = "logo"
+        Me.logo.Size = New System.Drawing.Size(64, 55)
+        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.logo.TabIndex = 12
+        Me.logo.TabStop = False
+        '
+        'alamat
+        '
+        Me.alamat.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.alamat.BackColor = System.Drawing.Color.Transparent
+        Me.alamat.Font = New System.Drawing.Font("Verdana", 6.0!, System.Drawing.FontStyle.Bold)
+        Me.alamat.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.alamat.Location = New System.Drawing.Point(94, 32)
+        Me.alamat.Name = "alamat"
+        Me.alamat.Size = New System.Drawing.Size(671, 10)
+        Me.alamat.TabIndex = 13
+        Me.alamat.Text = "jalan pesantern, sliyeg, kabupaten indramayu"
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 6.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(93, 42)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(671, 10)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "(+62)85333331343"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.BackgroundImage = Global.Mesin_Antrian_Display.My.Resources.Resources._5559852
+        Me.BackColor = System.Drawing.Color.DodgerBlue
         Me.ClientSize = New System.Drawing.Size(789, 462)
+        Me.Controls.Add(Me.company)
         Me.Controls.Add(Me.GroupBox10)
         Me.Controls.Add(Me.scrolingbox)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.AxWindowsMediaPlayer1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form2"
         Me.Text = "  "
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -673,6 +721,8 @@ Partial Class Form2
         Me.loket_C.ResumeLayout(False)
         Me.loket_B.ResumeLayout(False)
         Me.loket_A.ResumeLayout(False)
+        Me.company.ResumeLayout(False)
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -680,48 +730,53 @@ Partial Class Form2
     Friend WithEvents main_tipe_loket_text As Label
     Friend WithEvents main_number_loket As Label
     Friend WithEvents main_tipe_loket As Label
-    Friend WithEvents main_loket As Label
     Friend WithEvents loket_A As GroupBox
     Friend WithEvents a As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents la As Label
+    Friend WithEvents loa As Label
     Friend WithEvents loket_F As GroupBox
     Friend WithEvents f As Label
     Friend WithEvents Label26 As Label
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
+    Friend WithEvents lf As Label
+    Friend WithEvents lof As Label
     Friend WithEvents loket_E As GroupBox
     Friend WithEvents e As Label
     Friend WithEvents Label22 As Label
-    Friend WithEvents Label23 As Label
-    Friend WithEvents Label24 As Label
+    Friend WithEvents le As Label
+    Friend WithEvents loe As Label
     Friend WithEvents Loket_D As GroupBox
     Friend WithEvents d As Label
     Friend WithEvents Label18 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label20 As Label
+    Friend WithEvents ld As Label
+    Friend WithEvents lod As Label
     Friend WithEvents loket_C As GroupBox
     Friend WithEvents c As Label
     Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
+    Friend WithEvents lc As Label
+    Friend WithEvents loc As Label
     Friend WithEvents loket_B As GroupBox
     Friend WithEvents b As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lb As Label
+    Friend WithEvents lob As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Timer1 As Timer
     Friend WithEvents scroling_text As Label
     Friend WithEvents loket_G As GroupBox
     Friend WithEvents g As Label
     Friend WithEvents Label30 As Label
-    Friend WithEvents Label31 As Label
-    Friend WithEvents Label32 As Label
+    Friend WithEvents lg As Label
+    Friend WithEvents log As Label
     Friend WithEvents SerialPort1 As IO.Ports.SerialPort
     Private WithEvents AxWindowsMediaPlayer1 As AxWMPLib.AxWindowsMediaPlayer
     Private WithEvents GroupBox1 As GroupBox
     Private WithEvents scrolingbox As GroupBox
     Private WithEvents GroupBox10 As GroupBox
+    Friend WithEvents Timer2 As Timer
+    Private WithEvents company As GroupBox
+    Friend WithEvents logo As PictureBox
+    Friend WithEvents instansi As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents alamat As Label
 End Class
